@@ -1,0 +1,11 @@
+{
+    "author": "Diego Hurtado",
+    "email": "diego.hurtado@toptal.com",
+    "repo_name": "opentelemetry-python-autoagent",
+    "repo_url": "https://github.com/theteam/opentelemetry-python-autoagent",
+    "doc_url": "https://opentelemetry-python-autoagent.readthedocs.org/",
+    "project_name": "OpenTelemetry Python AutoAgent",
+    "short_description": "Python Automatic Instrumentation Agent for OpenTelemetry",
+    "year": "2019",
+    "version": "0.1.0"
+}
