@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
-from opentelemetry_python_autoagent import __version__
+from sys import exit
 
-print('opentelemetry_python_autoagent version {}'.format(__version__))
+from opentelemetry_python_autoagent import __version__
+from opentelemetry_python_autoagent.runner import run
+
+
+if __name__ == '__main__':
+
+    print('opentelemetry_python_autoagent version {}'.format(__version__))
+    exit(run())

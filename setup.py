@@ -84,5 +84,11 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3',
     ],
-    scripts=['bin/opentelemetry_python_autoagent']
+    scripts=['bin/opentelemetry_python_autoagent'],
+    entry_points={
+        'opentelemetry_python_autoagent_10': [
+            'minimal = opentelemetry_python_autoagent.plugin.minimal:'
+            'MinimalPlugin'
+        ]
+    }
 )
