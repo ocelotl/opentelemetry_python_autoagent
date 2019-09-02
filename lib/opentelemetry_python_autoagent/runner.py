@@ -21,9 +21,25 @@ for entry_point in iter_entry_points(
         ' autoagent, options are:\n\n{}'.format('\n'.join(plugins.keys()))
     )
 )
-def run(plugin):
+@option(
+    '--path',
+    help=(
+        'Path of the file that is to be executed by the autoagent plugin'
+    )
+)
+def run(plugin, path):
 
     print('Using plugin: {}'.format(plugin))
+
+    try:
+
+        plugin_class = plugins[plugin]
+
+    except KeyError:
+
+        raise RuntimeError('Invalid plugin: {}'.format(plugin))
+
+    plugin_class().run(path)
 
 
 __all__ = ['run']
