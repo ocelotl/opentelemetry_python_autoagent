@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+from opentelemetry_python_autoagent import __version__
+
+print('opentelemetry_python_autoagent version {}'.format(__version__))
