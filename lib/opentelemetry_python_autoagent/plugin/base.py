@@ -4,9 +4,9 @@ from abc import ABCMeta, abstractmethod
 class BasePlugin(metaclass=ABCMeta):
 
     @abstractmethod
-    def get_options(self):
+    def run(self, path, tracer):
         """
-        Returns a dictionary of command line options
+        Runs the file defined in path
         """
 
 
