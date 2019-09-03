@@ -33,7 +33,7 @@ def run(plugin, path):
 
     try:
 
-        plugin_class = plugins[plugin]
+        plugin_class = plugins[plugin].load()
 
     except KeyError:
 
