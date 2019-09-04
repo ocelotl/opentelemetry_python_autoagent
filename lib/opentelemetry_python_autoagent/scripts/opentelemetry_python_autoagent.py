@@ -15,10 +15,8 @@ def run():
 
     os.environ['PYTHONPATH'] = join(dirname(__file__), 'initialize')
 
-    print(os.environ['PYTHONPATH'])
-
     python3 = find_executable('python3')
 
-    execl(python3, python3, *argv[2:])
+    execl(python3, python3, argv[1])
 
     exit(0)

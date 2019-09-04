@@ -4,7 +4,7 @@ from abc import ABCMeta, abstractmethod
 class BasePlugin(metaclass=ABCMeta):
 
     @abstractmethod
-    def monkeypatch(self, tracer):
+    def monkeypatch(self):
         """
         Monkeypatches the specific package
         """
