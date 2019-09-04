@@ -4,9 +4,9 @@ from abc import ABCMeta, abstractmethod
 class BasePlugin(metaclass=ABCMeta):
 
     @abstractmethod
-    def run(self, path, tracer):
+    def monkeypatch(self, tracer):
         """
-        Runs the file defined in path
+        Monkeypatches the specific package
         """
 
 

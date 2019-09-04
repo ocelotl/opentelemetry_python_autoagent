@@ -3,9 +3,9 @@ from opentelemetry_python_autoagent.plugin.base import BasePlugin
 
 class MinimalPlugin(BasePlugin):
 
-    def get_options(self):
+    def monkeypatch(self, tracer):
 
-        return {}
+        pass
 
 
 __all__ = ['MinimalPlugin']
