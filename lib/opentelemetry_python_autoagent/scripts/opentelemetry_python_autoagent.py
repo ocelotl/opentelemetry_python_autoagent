@@ -19,6 +19,6 @@ def run():
 
     python3 = find_executable('python3')
 
-    execl(python3, python3, argv[1])
+    execl(python3, python3, *argv[2:])
 
     exit(0)
